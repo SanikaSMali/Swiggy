@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Sign-Up Page</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-box">
+            <h1>Sign Up</h1>
+            <form id="signupForm">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password" required>
+                </div>
+                <a href="index.html"><button type="submit" class="btn">Sign Up</button></a>
+            </form>
+            <p class="login-redirect">Already have an account? <a href="#" id="loginBtn">Login</a></p>
+            <p class="forgot-password"><a href="#" id="forgotPasswordBtn">Forgot Password?</a></p>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div id="forgotPasswordModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Forgot Password</h2>
+            <p>Enter your email to reset your password</p>
+            <input type="email" id="resetEmail" placeholder="Enter your email" required>
+            <button id="resetPasswordBtn" class="btn">Reset Password</button>
+        </div>
+    </div>
+
+    <script src="script4.js"></script>
+</body>
+</html>

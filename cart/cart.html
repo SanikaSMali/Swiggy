@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Cart</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="item-container">
+        <h1>Menu</h1>
+        <div class="menu-items" id="menuItems"></div>
+    </div>
+
+    <div class="cart-container">
+        <h2>Your Cart</h2>
+        <ul id="cartItems">
+            <!-- Cart items will be listed here -->
+        </ul>
+        <p id="totalPrice">Total: ₹0</p> <!-- Display total price here -->
+        <button id="orderButton" class="hidden">Place Order</button>
+    </div>
+
+    <div id="orderForm" class="hidden">
+        <h2>Enter Delivery Details</h2>
+        <input type="text" id="address" placeholder="Enter your address">
+        <input type="text" id="mobile" placeholder="Enter your mobile number">
+        <button id="confirmOrderButton">Confirm Order</button>
+    </div>
+
+    <div id="billSummary" class="hidden">
+        <h2>Order Summary</h2>
+        <ul id="billItems">
+            <!-- Bill items will be listed here -->
+        </ul>
+        <p id="billTotalPrice">Total: ₹0</p> <!-- Display total bill price -->
+        <p><strong>Address:</strong> <span id="billAddress"></span></p>
+        <p><strong>Mobile:</strong> <span id="billMobile"></span></p>
+        <h2>Thank you for your order! 
+		            ENJOY YOUR DAY !! :)</h2>
+		<button id="downloadBillButton">Download Bill</button>
+    </div>
+	<div id="billSummary" class="hidden">
+    <p id="billTotalPrice">Total: ₹0</p> <!-- Display total bill price -->
+    <p><strong>Address:</strong> <span id="billAddress"></span></p>
+    <p><strong>Mobile:</strong> <span id="billMobile"></span></p>
+    <h2>Thank you for your order!</h2>
+    <button id="printBillButton">Print/Download Bill</button>
+    
+    <!-- Bill Container for Styled Bill -->
+    <div id="billContainer" class="hidden">
+        <div class="bill-header">
+            <h2>Swiggy</h2>
+            <p>Order Receipt</p>
+        </div>
+        <div class="bill-body">
+            <p><strong>Order Date:</strong> <span id="orderDate"></span></p>
+            <p><strong>Delivery To:</strong></p>
+            <p id="customerAddress"></p>
+            <p><strong>Mobile:</strong> <span id="customerMobile"></span></p>
+            <ul id="detailedBillItems"></ul>
+            <p id="subtotal"></p>
+            <p id="deliveryCharges">Delivery Charges: ₹40</p>
+            <p id="finalTotal"></p>
+        </div>
+    </div>
+</div>
+
+<div id="billSummary" class="hidden">
+    <p id="billTotalPrice">Total: ₹0</p> <!-- Display total bill price -->
+    <p><strong>Address:</strong> <span id="billAddress"></span></p>
+    <p><strong>Mobile:</strong> <span id="billMobile"></span></p>
+    <h2>Thank you for your order!</h2>
+    <button id="downloadPDFButton">Download PDF Bill</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+    <script src="script3.js"></script>
+</body>
+</html>
